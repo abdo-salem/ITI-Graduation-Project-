@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -12,6 +13,11 @@ import { FirstNavbarComponent } from './first-navbar/first-navbar.component';
 import { SecondNavbarComponent } from './second-navbar/second-navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ForDocsComponent } from './first-nav-links/for-docs/for-docs.component';
+import { ForDocsSliderComponent } from './first-nav-links/for-docs-slider/for-docs-slider.component';
+import { ForInsurersComponent } from './first-nav-links/for-insurers/for-insurers.component';
+import { ForInsurersSliderComponent } from './first-nav-links/for-insurers-slider/for-insurers-slider.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +26,15 @@ import { FooterComponent } from './footer/footer.component';
     FirstNavbarComponent,
     SecondNavbarComponent,
     HomePageComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent,
+    ForDocsComponent,
+    ForDocsSliderComponent,
+    ForInsurersComponent,
+    ForInsurersSliderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule ,
-    CarouselModule ,
-  ],
+  imports: [BrowserModule, AppRoutingModule, CarouselModule, SwiperModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,16 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 .more-sell .owl-carousel .owl-item img {
-    display: block;
-    width: 200px !important;
-    height: 150px !important;
-    margin: auto;
+  display: block;
+  width: 200px !important;
+  height: 150px !important;
+  margin: auto;
 }
 
-.more-sell .owl-carousel .owl-item {width: 250px !important;}
-.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
-    display: none !important;
+.more-sell .owl-carousel .owl-item {
+  width: 250px !important;
+}
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  display: none !important;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background: #12233f !important;}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #12233f !important;
+}
 
+/* Swiper For Docs and For Insures */
 
+@import "~swiper/swiper-bundle";
+.swiper-pagination {
+  text-align: -webkit-center;
+}
+.swiper-pagination-bullet {
+  text-align: center;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  height: 20px;
+  width: 20px;
+}
+
+:root {
+  --swiper-theme-color: #ffffff;
+}

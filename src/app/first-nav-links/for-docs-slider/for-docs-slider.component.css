@@ -1,0 +1,79 @@
+/* @import "~swiper/swiper";
+@import "~swiper/components/navigation/navigation";
+@import "~swiper/components/pagination/pagination";
+@import "~swiper/css";
+@import "~swiper/css/pagination"; */
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.x-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 90%;
+}
+.x-content h1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+.content .x-content p {
+  font-size: 23px;
+}
+
+.content-two {
+  background-color: #ff963c;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+}
+
+.content-two .mySwiper {
+  width: 90%;
+}
+
+.content-two .mySwiper .x-content p {
+  font-size: 21px;
+}
+
+.content-two ul {
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+
+.content-two ul li {
+  width: 90%;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  margin: 0 40%;
+  font-size: 21px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
